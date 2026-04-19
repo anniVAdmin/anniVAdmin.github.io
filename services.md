@@ -7,6 +7,7 @@ permalink: /services/
 
 
 # Services and Pricing
+<hr style="margin: 2rem 0; border: 0; border-top: 1px solid #ccc;">
 
 Below is a clear overview of the admin support services I offer.
 
