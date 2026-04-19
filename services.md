@@ -3,7 +3,7 @@
 layout: page
 title: "Services and Pricing"
 permalink: /services/
-<hr style="margin: 2rem 0; border: 0; border-top: 1px solid #ccc;">
+---
 
 
 # Services and Pricing
