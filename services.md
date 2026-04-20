@@ -13,7 +13,7 @@ Below is a clear overview of the admin support services I offer.
 
 
 <p style="margin: 2rem 0 1rem 0; font-size: 1.2rem; line-height: 1;">
-  <span style="color: #888;">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span>
+  <span style="color: white;">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span>
 </p>
 
 
