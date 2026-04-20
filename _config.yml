@@ -5,24 +5,17 @@ description: "Admin support, systems, and workflow clarity — delivered with ca
 url: "https://anniVAdmin.github.io"
 baseurl: ""
 
+theme: jekyll-theme-chirpy
 theme_mode: light
 
 # Social links
 social:
   github: anniVAdmin
-  linkedin: ""        # add later if you want
-  email: ""           # add later if you want
+  linkedin: ""
+  email: ""
 
-# Navigation (edit later when pages exist)
-nav:
-  - title: "Home"
-    url: /
-  - title: "About"
-    url: /about/
-  - title: "Services"
-    url: /services/
-  - title: "Contact"
-    url: /contact/
+# Enable Chirpy tabs
+tabs: true
 
 # Build settings
 markdown: kramdown
@@ -34,6 +27,3 @@ timezone: Europe/London
 
 sass:
   style: compressed
-
-assets:
-  css: /assets/css/style.scss
