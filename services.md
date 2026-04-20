@@ -17,6 +17,4 @@ ________________________________________________________________________________
 </p>
 
 
----
-
 <img src="/assets/images/services-pricing.png" alt="Services and pricing for anniV admin support">
