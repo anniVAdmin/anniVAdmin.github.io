@@ -11,7 +11,7 @@ permalink: /services/
 Below is a clear overview of the admin support services I offer.
 
 
-<div style="margin: 2rem 0; border-bottom: 2px solid red;"></div>
+<span style="letter-spacing: -2px; font-size: 20px; color: red;">________________________________________</span>
 
 
 <img src="/assets/images/services-pricing.png" alt="Services and pricing for anniV admin support">
