@@ -5,7 +5,6 @@ description: "Admin support, systems, and workflow clarity — delivered with ca
 url: "https://anniVAdmin.github.io"
 baseurl: ""
 
-theme: jekyll-theme-chirpy
 theme_mode: light
 
 # Social links
