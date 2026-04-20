@@ -4,7 +4,7 @@ title: "Services and Pricing"
 permalink: /services/
 ---
 
-Welcome to my servises page.
+Welcome to my services page.
 
 
 
