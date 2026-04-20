@@ -10,5 +10,5 @@ permalink: /services/
 <hr style="margin: 2rem 0; border: 0; border-top: 1px solid #ccc;">
 
 Below is a clear overview of the admin support services I offer.
-<hr style="margin: 2rem 0; border: 0; border-top: 1px solid #ccc;">
+<hr style="margin: 2rem 0; border: none; border-top: 1px solid #ccc !important;">
 <img src="/assets/images/services-pricing.png" alt="Services and pricing for anniV admin support">
