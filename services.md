@@ -1,9 +1,10 @@
 
+---
 layout: page
 title: "Services and Pricing"
 permalink: /services/
+---
 
-Services and Pricing
 <p style="opacity:0.8">
   ══════════════════════════════════════════════════════════════════════════════════
 </p>
