@@ -1,10 +1,11 @@
 ---
-
 layout: page
 title: "Services and Pricing"
 permalink: /services/
-
 ---
+
+Welcome to my servises page.
+
 
 
 <p style="opacity:0.8">
