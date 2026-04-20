@@ -12,8 +12,8 @@ permalink: /services/
 Below is a clear overview of the admin support services I offer.
 
 
-<p style="margin: 2rem 0 1rem 0; text-decoration: underline; text-decoration-color: #888; text-decoration-thickness: 2px; text-underline-offset: 6px;">
-&nbsp;
+<p style="margin: 2rem 0 1rem 0; font-size: 1.2rem; line-height: 1;">
+  <span style="color: #888;">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span>
 </p>
 
 
