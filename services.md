@@ -6,18 +6,10 @@ permalink: /services/
 
 Welcome to my services page.
 
-{% raw %}
-<div style="opacity:0.35; text-align:center;">
-  ══════════════════════════════════════════════════════════════════════════════════
-</div>
-{% endraw %}
+<hr style="border: 0; border-top: 1px solid rgba(0,0,0,0.2); margin: 2rem 0;">
 
 Below is a clear overview of the admin support services I offer. No surprises.
 
-{% raw %}
-<div style="opacity:0.35; text-align:center;">
-  ══════════════════════════════════════════════════════════════════════════════════
-</div>
-{% endraw %}
+<hr style="border: 0; border-top: 1px solid rgba(0,0,0,0.2); margin: 2rem 0;">
 
 <img src="/assets/images/services-pricing.png" alt="Services and pricing for anniV admin support">
