@@ -9,7 +9,7 @@ permalink: /services/
 # Services and Pricing
 ---
 
-Below is a clear overview of the admin support services I offer.
+Below is a clear overview of the admin support services I offer. No surprises.
 
 
 <div class="anni-dual-line">
