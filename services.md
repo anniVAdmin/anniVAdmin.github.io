@@ -11,6 +11,7 @@ Welcome to my services page.
 </div>
 
 Below is a clear overview of the admin support services I offer. No surprises.
+
 <div style="opacity:0.35; text-align:center;">
   ══════════════════════════════════════════════════════════════════════════════════
 </div>
