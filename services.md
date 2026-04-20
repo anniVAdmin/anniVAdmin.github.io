@@ -12,7 +12,9 @@ permalink: /services/
 Below is a clear overview of the admin support services I offer.
 
 
-<p style="margin: 2rem 0; border-bottom: 1px solid var(--text-color); opacity: 0.4;"></p>
+<p style="margin: 2rem 0 1rem 0; font-size: 0.8rem; letter-spacing: -2px; color: white; opacity: 0.7;">
+______________________________________________________________
+</p>
 
 
 ---
