@@ -4,9 +4,13 @@ title: "Services and Pricing"
 permalink: /services/
 ---
 
+&nbsp;
+
+
+
 <hr style="border: 0; border-top: 1px solid rgba(0,0,0,0.2); margin: 2rem 0;">
 
-Below is a clear overview of the admin support services I offer.
+Below is a clear overview of the admin support services I offer. No surprises.
 
 <hr style="border: 0; border-top: 1px solid rgba(0,0,0,0.2); margin: 2rem 0;">
 
