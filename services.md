@@ -12,10 +12,9 @@ permalink: /services/
 Below is a clear overview of the admin support services I offer. No surprises.
 
 
-<div class="anni-dual-line">
-  <span>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span>
-  <span>━━━━━━━━━━━━━━━━━━━━━━</span>
-</div>
+<p style="text-align:center; opacity:0.6;">
+  ════════════════════════════════════════════════════════════════════════════════
+</p>
 
 
 <img src="/assets/images/services-pricing.png" alt="Services and pricing for anniV admin support">
