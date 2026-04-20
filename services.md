@@ -12,11 +12,11 @@ permalink: /services/
 Below is a clear overview of the admin support services I offer.
 
 
-<p style="margin: 1.5rem 0; line-height: 1;">
-  <span style="color: white; display: block;">
+<p style="margin: 1.5rem 0; line-height: 0.7;">
+  <span style="color: black; display: block;">
     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
   </span>
-  <span style="color: white; display: block; margin-top: -0.2rem;">
+  <span style="color: black; display: block; margin-top: -0.2rem;">
     ━━━━━━━━━━━━━━━━━━
   </span>
 </p>
