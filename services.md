@@ -17,7 +17,7 @@ Below is a clear overview of the admin support services I offer.
     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
   </span>
   <span style="color: white; display: block; margin-top: -0.2rem;">
-    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
   </span>
 </p>
 
