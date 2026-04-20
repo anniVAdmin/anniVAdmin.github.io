@@ -14,8 +14,7 @@ Below is a clear overview of the admin support services I offer.
 
 <div class="anni-dual-line">
   <span>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span>
-  <span>━━━━━━━━━━━━━━━━━━━━━━</span>;
-  <span>━━━━━━━━━━━</span>
+  <span>━━━━━━━━━━━━━━━━━━━━━━━━━━━</span>
 </div>
 
 
