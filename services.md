@@ -12,8 +12,8 @@ permalink: /services/
 Below is a clear overview of the admin support services I offer. No surprises.
 
 
-<p style="text-align:center; opacity:0.6;">
-  ══════════════════════════════════════════════════════════════════════════════════
+<p style="opacity:0.35;">
+  ════════════════════════════════════════════════════════════════════════════════════
 </p>
 
 
