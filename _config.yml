@@ -36,3 +36,9 @@ plugins:
 # Theme settings
 lang: en
 timezone: Europe/London
+
+sass:
+  style: compressed
+
+assets:
+  css: /assets/css/style.scss
