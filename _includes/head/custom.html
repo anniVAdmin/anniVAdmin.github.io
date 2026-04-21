@@ -2,7 +2,10 @@
 <link rel="stylesheet" href="/assets/css/custom.css">
 
 <style>
-/* --- Wallpaper Enhancements for BODY Background --- */
+/* ============================================================
+   BODY WALLPAPER ENHANCEMENTS
+   Vignette + Bottom Fade + Content Layering
+   ============================================================ */
 
 body {
   position: relative;
@@ -42,22 +45,29 @@ body > * {
   position: relative;
   z-index: 3;
 }
-</style>
-<style>
-/* --- Transparent Sidebar with Readability Layer --- */
 
-/* Make sidebar background transparent */
+
+/* ============================================================
+   SIDEBAR — BRAND MATTE GREY
+   ============================================================ */
+
 .sidebar {
-  background: rgba(0, 0, 0, 0.35) !important; /* adjust opacity as needed */
-  backdrop-filter: blur(4px); /* optional: gives a frosted-glass effect */
+  background: rgba(42, 42, 42, 0.92) !important; /* matte grey, high opacity */
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
 }
 
-/* Sidebar items stay readable */
+/* Sidebar text styling */
 .sidebar a,
 .sidebar .site-title,
 .sidebar .site-subtitle,
 .sidebar .site-author-name {
-  color: #ffffff !important;
-  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+  color: #f2f2f2 !important; /* soft white */
+  text-shadow: none !important; /* matte aesthetic */
+}
+
+/* Optional: subtle dividers for structure */
+.sidebar .nav-item {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 </style>
