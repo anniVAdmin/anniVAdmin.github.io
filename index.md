@@ -1,6 +1,5 @@
 ---
 layout: page
-title: "Home"
 ---
 
 # Quietly fixing the chaos.
