@@ -1,20 +1,22 @@
-<style>
-body { border: 8px solid hotpink !important; }
-</style>
-
 <!-- Load your custom stylesheet (keep this!) -->
 <link rel="stylesheet" href="/assets/css/custom.css">
 
 <style>
-/* --- Wallpaper Enhancements: Vignette + Bottom Fade --- */
+/* --- Universal Header Overlays for Chirpy --- */
 
-#page-header {
+.page-header,
+#page-header,
+.post-header,
+.post-cover {
   position: relative;
   overflow: hidden;
 }
 
 /* Vignette (soft dark edges) */
-#page-header::before {
+.page-header::before,
+#page-header::before,
+.post-header::before,
+.post-cover::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -28,7 +30,10 @@ body { border: 8px solid hotpink !important; }
 }
 
 /* Bottom fade for text readability */
-#page-header::after {
+.page-header::after,
+#page-header::after,
+.post-header::after,
+.post-cover::after {
   content: "";
   position: absolute;
   inset: 0;
@@ -42,9 +47,15 @@ body { border: 8px solid hotpink !important; }
 }
 
 /* Ensure header text sits above overlays */
+.page-header .post-title,
+.page-header .post-subtitle,
+.page-header .post-meta,
 #page-header .post-title,
 #page-header .post-subtitle,
-#page-header .post-meta {
+#page-header .post-meta,
+.post-header .post-title,
+.post-header .post-subtitle,
+.post-header .post-meta {
   position: relative;
   z-index: 3;
 }
