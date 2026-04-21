@@ -9,7 +9,7 @@ Get organised. Stay organised. Breathe again.
 <section>
   <h2>Meet the Admin Gremlin</h2>
   <p>
-    You know that pile of digital nonsense you’ve been ignoring?  
+    You know that pile of digital nonsense you’ve been ignoring?   
     The invoices, the folders named “NEW NEW FINAL v3”, the emails you meant to reply to in 2021?  
     That’s where I live. That’s my ecosystem.
   </p>
