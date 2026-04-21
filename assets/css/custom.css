@@ -1,3 +1,14 @@
+/* Remove Chirpy's white content box */
+.post-content {
+    background-color: transparent !important;
+}
+
+/* Remove white background from the page wrapper */
+.page {
+    background-color: transparent !important;
+}
+
+/* Apply your background image */
 .page {
     background-image: url("/assets/images/your-image.png");
     background-size: cover;
