@@ -1,17 +1,18 @@
-/* Apply background image to the entire site */
-body {
-    background-image: url("/assets/images/your-image.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+/* Apply background image to the absolute root */
+html {
+    background-image: url("/assets/images/your-image.png") !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-attachment: fixed !important;
 }
 
-/* Make sure no white boxes cover it */
+/* Make sure all containers are transparent */
+body,
 .page,
 .post-content,
 .page__body,
 #main-wrapper,
 #main {
-    background-color: transparent !important;
+    background: transparent !important;
 }
