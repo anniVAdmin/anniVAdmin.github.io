@@ -2,9 +2,10 @@ title: "anniV Admin Support"
 tagline: "Get organised. Stay organised. Breathe again."
 description: "Admin support, systems, and workflow clarity — delivered with calm, structure, and zero chaos."
 
-url: "https://anniVAdmin.github.io"
+url: "https://annivadmin.github.io"
 baseurl: ""
 
+theme: jekyll-theme-chirpy
 theme_mode: light
 
 # Social links
