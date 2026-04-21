@@ -1,14 +1,17 @@
-/* Apply background to the actual full-page wrapper */
-.page__body {
+/* Apply background image to the entire site */
+body {
     background-image: url("/assets/images/your-image.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed; /* optional: makes it feel more modern */
+    background-attachment: fixed;
 }
 
-/* Make inner containers transparent so the background shows */
+/* Make sure no white boxes cover it */
 .page,
-.post-content {
+.post-content,
+.page__body,
+#main-wrapper,
+#main {
     background-color: transparent !important;
 }
