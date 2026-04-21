@@ -32,6 +32,10 @@ highlighter: rouge
 sass:
   style: compressed
 
+assets:
+  css:
+    - /assets/css/custom.css
+
 # Collections
 collections:
   tabs:
