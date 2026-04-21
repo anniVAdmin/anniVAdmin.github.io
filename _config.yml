@@ -21,6 +21,11 @@ tabs: true
 markdown: kramdown
 highlighter: rouge
 
+kramdown:
+  input: GFM
+  hard_wrap: false
+  parse_block_html: true
+
 # Theme settings
 lang: en
 timezone: Europe/London
