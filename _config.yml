@@ -25,6 +25,11 @@ kramdown:
   hard_wrap: false
   parse_block_html: true
 
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-include-cache
+
 # Theme settings
 lang: en
 timezone: Europe/London
