@@ -1,21 +1,14 @@
-/* Remove Chirpy's white content box */
-.post-content {
-    background-color: transparent !important;
-}
-
-/* Remove white background from the page wrapper */
-.page {
-    background-color: transparent !important;
-}
-
-/* Apply your background image */
-.page {
+/* Apply background to the actual full-page wrapper */
+.page__body {
     background-image: url("/assets/images/your-image.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-attachment: fixed; /* optional: makes it feel more modern */
+}
 
-    /* Force the background to actually be visible */
-    min-height: 100vh; /* full screen height */
-    width: 100%;
+/* Make inner containers transparent so the background shows */
+.page,
+.post-content {
+    background-color: transparent !important;
 }
