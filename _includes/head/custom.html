@@ -43,3 +43,21 @@ body > * {
   z-index: 3;
 }
 </style>
+<style>
+/* --- Transparent Sidebar with Readability Layer --- */
+
+/* Make sidebar background transparent */
+.sidebar {
+  background: rgba(0, 0, 0, 0.35) !important; /* adjust opacity as needed */
+  backdrop-filter: blur(4px); /* optional: gives a frosted-glass effect */
+}
+
+/* Sidebar items stay readable */
+.sidebar a,
+.sidebar .site-title,
+.sidebar .site-subtitle,
+.sidebar .site-author-name {
+  color: #ffffff !important;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+}
+</style>
