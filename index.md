@@ -5,7 +5,7 @@ layout: home
 
 <h1 class="fw-bold">Quietly fixing the chaos.</h1>
 <p class="lead">Get organised. Stay organised. Breathe again.</p>
-
+ 
 <section>
   <h2>Meet the Admin Gremlin</h2>
   <p>
