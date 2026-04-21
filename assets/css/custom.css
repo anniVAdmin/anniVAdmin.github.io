@@ -1,6 +1,7 @@
-.post-content {
+body {
   background-image: url("/assets/img/bckgr.png");
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   background-position: center;
 }
