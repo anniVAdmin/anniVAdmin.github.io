@@ -2,40 +2,31 @@
 <link rel="stylesheet" href="/assets/css/custom.css">
 
 <style>
-/* --- Universal Header Overlays for Chirpy --- */
+/* --- Wallpaper Enhancements for BODY Background --- */
 
-.page-header,
-#page-header,
-.post-header,
-.post-cover {
+body {
   position: relative;
   overflow: hidden;
 }
 
 /* Vignette (soft dark edges) */
-.page-header::before,
-#page-header::before,
-.post-header::before,
-.post-cover::before {
+body::before {
   content: "";
-  position: absolute;
+  position: fixed;
   inset: 0;
   pointer-events: none;
   background: radial-gradient(
     circle at center,
-    rgba(0,0,0,0) 40%,
+    rgba(0,0,0,0) 45%,
     rgba(0,0,0,0.35) 100%
   );
   z-index: 1;
 }
 
-/* Bottom fade for text readability */
-.page-header::after,
-#page-header::after,
-.post-header::after,
-.post-cover::after {
+/* Bottom fade for readability */
+body::after {
   content: "";
-  position: absolute;
+  position: fixed;
   inset: 0;
   pointer-events: none;
   background: linear-gradient(
@@ -46,16 +37,8 @@
   z-index: 2;
 }
 
-/* Ensure header text sits above overlays */
-.page-header .post-title,
-.page-header .post-subtitle,
-.page-header .post-meta,
-#page-header .post-title,
-#page-header .post-subtitle,
-#page-header .post-meta,
-.post-header .post-title,
-.post-header .post-subtitle,
-.post-header .post-meta {
+/* Ensure all content sits above overlays */
+body > * {
   position: relative;
   z-index: 3;
 }
