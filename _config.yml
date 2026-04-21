@@ -37,3 +37,8 @@ timezone: Europe/London
 
 sass:
   style: compressed
+
+# Load your custom CSS (this was missing)
+assets:
+  css:
+    - /assets/css/custom.css
