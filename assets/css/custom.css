@@ -1,1 +1,6 @@
-
+.post-content {
+  background-image: url("/assets/img/YOURIMAGE.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
