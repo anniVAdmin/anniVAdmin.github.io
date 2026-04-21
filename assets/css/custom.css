@@ -1,18 +1,18 @@
-/* Apply background image to the absolute root */
-html {
-    background-image: url("/assets/images/your-image.png") !important;
-    background-size: cover !important;
-    background-position: center !important;
-    background-repeat: no-repeat !important;
-    background-attachment: fixed !important;
+:root {
+  --main-bg: url("/assets/images/your-image.png");
 }
 
-/* Make sure all containers are transparent */
+/* Make sure the background behaves like an image */
+html {
+  background: var(--main-bg) no-repeat center center fixed !important;
+  background-size: cover !important;
+}
+
+/* Remove white layers */
 body,
-.page,
-.post-content,
-.page__body,
 #main-wrapper,
-#main {
-    background: transparent !important;
+#main,
+.page,
+.post-content {
+  background: transparent !important;
 }
