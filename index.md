@@ -3,8 +3,8 @@ layout: home
 # Index page
 ---
 
-<h1 class="fw-bold">Quietly fixing the chaos.</h1>
-<p class="lead">Get organised. Stay organised. Breathe again.</p>
+# Quietly fixing the chaos.
+Get organised. Stay organised. Breathe again.
  
 <section>
   <h2>Meet the Admin Gremlin</h2>
