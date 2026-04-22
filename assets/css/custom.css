@@ -162,3 +162,30 @@ aside#panel-wrapper a:hover {
   color: #000 !important;
   opacity: 1 !important;
 }
+
+/* ============================================================
+   FOOTER — FROSTED + TONED DOWN
+   ============================================================ */
+
+footer#footer {
+  background: rgba(255, 255, 255, 0.12) !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.25) !important;
+  backdrop-filter: blur(6px) !important;
+  padding: 1rem 0 !important;
+  text-align: center !important;
+}
+
+/* Footer text */
+footer#footer,
+footer#footer a,
+footer#footer span {
+  color: #222 !important;          /* soft dark, readable */
+  text-shadow: none !important;
+  opacity: 0.85 !important;        /* gentle, not shouty */
+  font-weight: 500 !important;
+}
+
+/* Hover links */
+footer#footer a:hover {
+  opacity: 1 !important;
+}
