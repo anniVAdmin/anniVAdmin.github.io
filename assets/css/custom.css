@@ -79,8 +79,8 @@ body > * {
    RIGHT SIDEBAR — RESET + OUTER FROSTING
    ============================================================ */
 
-/* Reset everything EXCEPT tag elements */
-aside#panel-wrapper *:not(.tag):not(.post-tag):not(.badge):not(.badge-tag):not(.tag-link):not(.list-inline-item):not(.list-inline-item a) {
+/* FIXED RESET — EXCLUDES TOPBAR */
+aside#panel-wrapper *:not(#topbar-wrapper *):not(.tag):not(.post-tag):not(.badge):not(.badge-tag):not(.tag-link):not(.list-inline-item):not(.list-inline-item a) {
   background: transparent !important;
   border: none !important;
   box-shadow: none !important;
@@ -217,13 +217,11 @@ footer.text-muted {
 
 @media (max-width: 768px) {
 
-  /* Prevent right sidebar from collapsing weirdly */
   aside#panel-wrapper {
     margin-top: 1.5rem !important;
     padding: 1rem !important;
   }
 
-  /* Ensure tag bubbles wrap cleanly */
   #panel-wrapper .tag,
   #panel-wrapper .post-tag,
   #panel-wrapper .badge,
@@ -234,13 +232,11 @@ footer.text-muted {
     padding: 0.3rem 0.65rem !important;
   }
 
-  /* Prevent left sidebar from shrinking too small */
   #sidebar-wrapper {
     padding: 1rem !important;
     margin-bottom: 1.5rem !important;
   }
 
-  /* Ensure wallpaper behaves on mobile */
   body {
     background-attachment: scroll !important;
   }
