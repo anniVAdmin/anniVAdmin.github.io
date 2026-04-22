@@ -1,7 +1,4 @@
-body {
-  background-image: url("/assets/img/bckgr.png");
-  background-size: cover;
-  background-repeat: no-repeat;a/* ============================================================
+/* ============================================================
    GLOBAL WALLPAPER
    ============================================================ */
 
@@ -101,7 +98,4 @@ body > * {
 #panel-wrapper a:hover {
   opacity: 0.8;
   transition: opacity 0.15s ease-in-out;
-}
-  background-attachment: fixed;
-  background-position: center;
 }
