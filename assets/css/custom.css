@@ -20,8 +20,9 @@
 /* Cards inside the right sidebar */
 .access .post-preview,
 .access .tag-list {
-  background: #ffffff !important;
-  border: 1px solid rgba(255, 255, 255, 0.15) !important;
+  background: rgba(255, 255, 255, 0.15) !important;
+  border: 1px solid rgba(255, 255, 255, 0.25) !important;
+  backdrop-filter: blur(6px);
   border-radius: 8px !important;
   padding: 0.75rem 1rem !important;
   box-shadow: none !important;
