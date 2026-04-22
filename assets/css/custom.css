@@ -76,11 +76,11 @@ body > * {
 
 
 /* ============================================================
-   RIGHT SIDEBAR — MERGED RESET + OUTER FROSTING
+   RIGHT SIDEBAR — RESET + OUTER FROSTING
    ============================================================ */
 
-/* Nuclear reset for all inner elements */
-aside#panel-wrapper * {
+/* Reset everything EXCEPT tag elements */
+aside#panel-wrapper *:not(.tag):not(.tag-list):not(a.tag) {
   background: transparent !important;
   border: none !important;
   box-shadow: none !important;
@@ -128,10 +128,9 @@ aside#panel-wrapper a:hover {
 
 
 /* ============================================================
-   RIGHT SIDEBAR TAG BUBBLES — FIXED + MATCHED
+   RIGHT SIDEBAR TAG BUBBLES — AIRY + GLASSY
    ============================================================ */
 
-/* Correct selector for right-sidebar tags */
 #panel-wrapper .tag {
   display: inline-block;
   padding: 0.25rem 0.55rem !important;
