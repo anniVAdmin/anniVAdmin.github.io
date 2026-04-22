@@ -276,3 +276,27 @@ aside .access a:hover,
   opacity: 0.8;
   transition: opacity 0.15s ease-in-out;
 }
+
+/* ============================================================
+   TAG BUBBLE — FINAL VISIBILITY FIX
+   ============================================================ */
+
+aside#panel-wrapper .tag-list a,
+aside#panel-wrapper .tag-list a.badge,
+aside#panel-wrapper .tag-list a.tag {
+  background: rgba(255, 255, 255, 0.10) !important;  /* more transparent */
+  border: 1px solid rgba(255, 255, 255, 0.25) !important;
+  color: #111 !important;                            /* stronger contrast */
+  font-weight: 600 !important;                       /* crisp text */
+  backdrop-filter: blur(4px) !important;
+  padding: 0.25rem 0.55rem !important;
+  border-radius: 999px !important;
+  text-shadow: none !important;
+}
+
+/* Hover */
+aside#panel-wrapper .tag-list a:hover {
+  background: rgba(255, 255, 255, 0.18) !important;
+  color: #000 !important;
+  opacity: 1 !important;
+}
