@@ -10,7 +10,7 @@ lang: en
 timezone: Europe/London
 
 # Sidebar avatar (optional — remove if not used)
-avatar: "/assets/img/favicons/apple-touch-icon.png"
+avatar: "/assets/img/avatar.png"
 
 # Social links
 social:
