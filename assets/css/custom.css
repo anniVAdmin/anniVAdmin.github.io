@@ -80,7 +80,7 @@ body > * {
    ============================================================ */
 
 /* Reset everything EXCEPT tag elements */
-aside#panel-wrapper *:not(.tag):not(.tag-list):not(a.tag) {
+aside#panel-wrapper *:not(.tag):not(.post-tag):not(.badge):not(.badge-tag):not(.tag-link):not(.list-inline-item):not(.list-inline-item a) {
   background: transparent !important;
   border: none !important;
   box-shadow: none !important;
@@ -128,11 +128,16 @@ aside#panel-wrapper a:hover {
 
 
 /* ============================================================
-   RIGHT SIDEBAR TAG BUBBLES — AIRY + GLASSY
+   RIGHT SIDEBAR TAG BUBBLES — UNIVERSAL + GLASSY
    ============================================================ */
 
-#panel-wrapper .tag {
-  display: inline-block;
+#panel-wrapper .tag,
+#panel-wrapper .post-tag,
+#panel-wrapper .badge,
+#panel-wrapper .badge-tag,
+#panel-wrapper .tag-link,
+#panel-wrapper .list-inline-item a {
+  display: inline-block !important;
   padding: 0.25rem 0.55rem !important;
   margin: 0.25rem 0.35rem !important;
   background: rgba(255, 255, 255, 0.12) !important;
@@ -147,7 +152,12 @@ aside#panel-wrapper a:hover {
 }
 
 /* Hover */
-#panel-wrapper .tag:hover {
+#panel-wrapper .tag:hover,
+#panel-wrapper .post-tag:hover,
+#panel-wrapper .badge:hover,
+#panel-wrapper .badge-tag:hover,
+#panel-wrapper .tag-link:hover,
+#panel-wrapper .list-inline-item a:hover {
   background: rgba(255, 255, 255, 0.18) !important;
   color: #000 !important;
   opacity: 1 !important;
