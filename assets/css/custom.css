@@ -49,10 +49,40 @@ body > * {
 
 
 /* ============================================================
-   RIGHT SIDEBAR — TARGET THE REAL PANEL
+   LEFT SIDEBAR — MATCHED STYLE
    ============================================================ */
 
-/* The actual visible panel is .row inside .access */
+:root {
+  --sidebar-bg: rgba(245, 245, 245, 0.88) !important;
+}
+
+#sidebar-wrapper {
+  background: rgba(255, 255, 255, 0.15) !important;
+  border: 1px solid rgba(255, 255, 255, 0.25) !important;
+  border-radius: 8px !important;
+  backdrop-filter: blur(6px);
+  box-shadow: none !important;
+  padding: 1rem !important;
+}
+
+#sidebar-wrapper a,
+#sidebar-wrapper .site-title,
+#sidebar-wrapper .site-subtitle,
+#sidebar-wrapper .site-author-name {
+  color: #222 !important;
+  text-shadow: none !important;
+}
+
+#sidebar-wrapper .nav-item {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+
+
+/* ============================================================
+   RIGHT SIDEBAR — FIX THE REAL PANEL
+   ============================================================ */
+
 #panel-wrapper .access .row,
 #panel-wrapper .access .row > div {
   background: transparent !important;
@@ -87,7 +117,6 @@ aside .access .panel-heading {
    MATCHED SIDEBAR CARD STYLE (LEFT + RIGHT)
    ============================================================ */
 
-/* Apply frosted-glass cards to both sidebars */
 .sidebar,
 aside .access .post-preview,
 aside .access .tag-list {
