@@ -300,3 +300,14 @@ aside#panel-wrapper .tag-list a:hover {
   color: #000 !important;
   opacity: 1 !important;
 }
+
+/* ============================================================
+   TAG TEXT — OVERRIDE BOOTSTRAP'S text-muted
+   ============================================================ */
+
+aside#panel-wrapper .tag-list a,
+aside#panel-wrapper .tag-list a * {
+  color: #111 !important;               /* strong readable text */
+  font-weight: 600 !important;          /* crisp */
+  text-shadow: none !important;
+}
