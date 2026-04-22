@@ -194,6 +194,24 @@ footer.text-muted {
 
 
 /* ============================================================
+   MOBILE HEADER FIX — RESTORE CLICKABLE AREAS
+   ============================================================ */
+
+#sidebar-trigger,
+#search-trigger,
+#search-cancel {
+  padding: 0.6rem !important;
+  margin: 0 !important;
+  background: transparent !important;
+  border: none !important;
+  position: relative !important;
+  z-index: 9999 !important;
+  cursor: pointer !important;
+}
+
+
+
+/* ============================================================
    MOBILE FIXES — KEEP EVERYTHING INTACT
    ============================================================ */
 
