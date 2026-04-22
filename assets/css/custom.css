@@ -92,26 +92,18 @@ body > * {
   padding: 0 !important;
 }
 
-
-
-/* ============================================================
-   RIGHT SIDEBAR — SPACING + TYPOGRAPHY
-   ============================================================ */
-
-aside .access {
-  padding-top: 1.5rem !important;
-  padding-bottom: 1.5rem !important;
+/* Apply frosted-glass container styling — stronger specificity */
+aside#panel-wrapper .access .row > div,
+#panel-wrapper aside .access .row > div,
+#panel-wrapper .access .row > div {
+  background: rgba(255, 255, 255, 0.15) !important;
+  border: 1px solid rgba(255, 255, 255, 0.25) !important;
+  border-radius: 8px !important;
+  padding: 1rem !important;
+  backdrop-filter: blur(6px) !important;
+  box-shadow: none !important;
+  margin-bottom: 1rem !important;
 }
-
-aside .access .panel-heading {
-  font-size: 1.05rem !important;
-  font-weight: 600 !important;
-  letter-spacing: 0.3px !important;
-  text-transform: uppercase;
-  margin-bottom: 0.75rem !important;
-}
-
-
 
 /* ============================================================
    MATCHED SIDEBAR CARD STYLE (LEFT + RIGHT)
