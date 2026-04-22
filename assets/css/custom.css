@@ -164,10 +164,12 @@ aside#panel-wrapper a:hover {
 }
 
 /* ============================================================
-   FOOTER — FROSTED + TONED DOWN
+   FOOTER — FORCE TEXT COLOR OVERRIDE
    ============================================================ */
 
 footer#footer {
+  --text-color: #222 !important; /* override Chirpy variable */
+  color: #222 !important;
   background: rgba(255, 255, 255, 0.12) !important;
   border-top: 1px solid rgba(255, 255, 255, 0.25) !important;
   backdrop-filter: blur(6px) !important;
@@ -175,17 +177,14 @@ footer#footer {
   text-align: center !important;
 }
 
-/* Footer text */
-footer#footer,
 footer#footer a,
 footer#footer span {
-  color: #222 !important;          /* soft dark, readable */
+  color: #222 !important;
+  opacity: 0.85 !important;
   text-shadow: none !important;
-  opacity: 0.85 !important;        /* gentle, not shouty */
   font-weight: 500 !important;
 }
 
-/* Hover links */
 footer#footer a:hover {
   opacity: 1 !important;
 }
