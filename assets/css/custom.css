@@ -183,16 +183,11 @@ footer.text-muted {
   text-align: center !important;
 }
 
-/* Footer as a single frosted pill */
+/* Force footer pill to stay on one line */
 footer.text-muted {
-  display: inline-block !important;
-  margin: 1rem auto !important;
-  padding: 0.4rem 1.2rem !important;
-  background: rgba(255, 255, 255, 0.12) !important;
-  border: 1px solid rgba(255, 255, 255, 0.22) !important;
-  border-radius: 999px !important;
-  backdrop-filter: blur(6px) !important;
-  color: #222 !important;
-  opacity: 0.85 !important;
-  text-align: center !important;
+  white-space: nowrap !important;   /* prevents wrapping */
+  width: auto !important;           /* shrink to fit content */
+  display: inline-flex !important;  /* keeps it on one line */
+  justify-content: center !important;
+  align-items: center !important;
 }
