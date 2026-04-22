@@ -311,3 +311,25 @@ aside#panel-wrapper .tag-list a * {
   font-weight: 600 !important;          /* crisp */
   text-shadow: none !important;
 }
+
+/* ============================================================
+   TAG BUBBLES — HIGH OPACITY FOR MAX READABILITY
+   ============================================================ */
+
+aside#panel-wrapper .tag-list a {
+  background: rgba(255, 255, 255, 0.35) !important;  /* stronger opacity */
+  border: 1px solid rgba(255, 255, 255, 0.45) !important;
+  color: #111 !important;
+  font-weight: 600 !important;
+  backdrop-filter: blur(4px) !important;
+  padding: 0.25rem 0.55rem !important;
+  border-radius: 999px !important;
+  text-shadow: none !important;
+}
+
+/* Hover */
+aside#panel-wrapper .tag-list a:hover {
+  background: rgba(255, 255, 255, 0.45) !important;
+  color: #000 !important;
+  opacity: 1 !important;
+}
