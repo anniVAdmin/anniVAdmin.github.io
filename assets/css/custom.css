@@ -23,6 +23,21 @@ body::before {
     rgba(0,0,0,0) 45%,
     rgba(0,0,0,0.35) 100%
   );
+
+  /* ============================================================
+   TAG VISIBILITY FIX — MATCH SIDEBAR AESTHETIC
+   ============================================================ */
+
+aside#panel-wrapper .tag-list a {
+  color: #222 !important;              /* readable, matches left sidebar */
+  font-weight: 500 !important;         /* slightly stronger text */
+  text-shadow: none !important;        /* keep it crisp */
+}
+
+aside#panel-wrapper .tag-list a:hover {
+  color: #000 !important;              /* subtle darken on hover */
+  opacity: 0.85 !important;
+}
   z-index: 1;
 }
 
