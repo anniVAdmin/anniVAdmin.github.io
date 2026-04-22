@@ -164,27 +164,21 @@ aside#panel-wrapper a:hover {
 }
 
 /* ============================================================
-   FOOTER — FORCE TEXT COLOR OVERRIDE
+   FOOTER — OVERRIDE BOOTSTRAP'S text-muted
    ============================================================ */
 
-footer#footer {
-  --text-color: #222 !important; /* override Chirpy variable */
+footer.text-muted,
+footer.text-muted * {
   color: #222 !important;
+  opacity: 0.85 !important;
+  text-shadow: none !important;
+}
+
+/* Frosted background for consistency */
+footer.text-muted {
   background: rgba(255, 255, 255, 0.12) !important;
   border-top: 1px solid rgba(255, 255, 255, 0.25) !important;
   backdrop-filter: blur(6px) !important;
   padding: 1rem 0 !important;
   text-align: center !important;
-}
-
-footer#footer a,
-footer#footer span {
-  color: #222 !important;
-  opacity: 0.85 !important;
-  text-shadow: none !important;
-  font-weight: 500 !important;
-}
-
-footer#footer a:hover {
-  opacity: 1 !important;
 }
