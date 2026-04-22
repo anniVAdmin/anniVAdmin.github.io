@@ -80,31 +80,64 @@ body > * {
 
 
 /* ============================================================
-   RIGHT SIDEBAR — FIX THE REAL PANEL
+   RIGHT SIDEBAR — NUCLEAR OPTION
    ============================================================ */
 
-#panel-wrapper .access .row,
-#panel-wrapper .access .row > div {
+/* Kill ALL backgrounds, shadows, borders, padding on every layer */
+aside#panel-wrapper,
+aside#panel-wrapper .access,
+aside#panel-wrapper .access .row,
+aside#panel-wrapper .access .row > div,
+aside#panel-wrapper .access .row > div > * {
   background: transparent !important;
-  backdrop-filter: none !important;
-  box-shadow: none !important;
   border: none !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
   padding: 0 !important;
+  margin: 0 !important;
 }
 
-/* Apply frosted-glass container styling — stronger specificity */
-aside#panel-wrapper .access .row > div,
-#panel-wrapper aside .access .row > div,
-#panel-wrapper .access .row > div {
+/* Now apply the frosted-glass container to the ACTUAL visible block */
+aside#panel-wrapper .access .row > div {
   background: rgba(255, 255, 255, 0.15) !important;
   border: 1px solid rgba(255, 255, 255, 0.25) !important;
   border-radius: 8px !important;
   padding: 1rem !important;
   backdrop-filter: blur(6px) !important;
-  box-shadow: none !important;
   margin-bottom: 1rem !important;
 }
 
+/* Frosted cards inside the sidebar */
+aside#panel-wrapper .post-preview,
+aside#panel-wrapper .tag-list {
+  background: rgba(255, 255, 255, 0.15) !important;
+  border: 1px solid rgba(255, 255, 255, 0.25) !important;
+  border-radius: 8px !important;
+  padding: 0.75rem 1rem !important;
+  backdrop-filter: blur(6px) !important;
+  margin-bottom: 1rem !important;
+}
+
+/* Section headings */
+aside#panel-wrapper .panel-heading {
+  font-size: 1.05rem !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.3px !important;
+  text-transform: uppercase !important;
+  margin-bottom: 0.75rem !important;
+  color: #222 !important;
+}
+
+/* Tag spacing */
+aside#panel-wrapper .tag-list a {
+  margin: 0.25rem 0.35rem !important;
+}
+
+/* Hover behaviour */
+aside#panel-wrapper a:hover {
+  opacity: 0.8 !important;
+  transition: opacity 0.15s ease-in-out !important;
+}
 /* ============================================================
    MATCHED SIDEBAR CARD STYLE (LEFT + RIGHT)
    ============================================================ */
