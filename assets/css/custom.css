@@ -18,8 +18,8 @@
 }
 
 /* Cards inside the right sidebar */
-.access .post-preview,
-.access .tag-list {
+aside .access .post-preview,
+aside .access .tag-list {
   background: rgba(255, 255, 255, 0.15) !important;
   border: 1px solid rgba(255, 255, 255, 0.25) !important;
   border-radius: 8px !important;
