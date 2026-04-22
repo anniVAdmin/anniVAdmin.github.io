@@ -182,3 +182,17 @@ footer.text-muted {
   padding: 1rem 0 !important;
   text-align: center !important;
 }
+
+/* Footer as a single frosted pill */
+footer.text-muted {
+  display: inline-block !important;
+  margin: 1rem auto !important;
+  padding: 0.4rem 1.2rem !important;
+  background: rgba(255, 255, 255, 0.12) !important;
+  border: 1px solid rgba(255, 255, 255, 0.22) !important;
+  border-radius: 999px !important;
+  backdrop-filter: blur(6px) !important;
+  color: #222 !important;
+  opacity: 0.85 !important;
+  text-align: center !important;
+}
