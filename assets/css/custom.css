@@ -1,7 +1,107 @@
 body {
   background-image: url("/assets/img/bckgr.png");
   background-size: cover;
+  background-repeat: no-repeat;a/* ============================================================
+   GLOBAL WALLPAPER
+   ============================================================ */
+
+body {
+  background-image: url("/assets/img/bckgr.png");
+  background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Soft vignette around edges */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(
+    circle at center,
+    rgba(0,0,0,0) 45%,
+    rgba(0,0,0,0.35) 100%
+  );
+  z-index: 1;
+}
+
+/* Bottom fade for readability */
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(
+    to bottom,
+    rgba(0,0,0,0) 0%,
+    rgba(0,0,0,0.45) 100%
+  );
+  z-index: 2;
+}
+
+/* Ensure all content sits above overlays */
+body > * {
+  position: relative;
+  z-index: 3;
+}
+
+
+
+/* ============================================================
+   RIGHT SIDEBAR — SPACING + TYPOGRAPHY
+   ============================================================ */
+
+/* Add breathing room */
+#panel-wrapper {
+  padding-top: 1.5rem !important;
+  padding-bottom: 1.5rem !important;
+}
+
+/* Stronger section titles */
+#panel-wrapper .panel-heading {
+  font-size: 1.05rem !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.3px !important;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem !important;
+}
+
+
+
+/* ============================================================
+   RIGHT SIDEBAR — MODERN CARD STYLE
+   ============================================================ */
+
+#panel-wrapper .post-preview,
+#panel-wrapper .tag-list {
+  background: #ffffff !important;
+  border: 1px solid rgba(255, 255, 255, 0.15) !important;
+  border-radius: 8px !important;
+  padding: 0.75rem 1rem !important;
+  box-shadow: none !important;
+  backdrop-filter: blur(3px);
+  margin-bottom: 1rem !important;
+}
+
+/* Tag pills spacing */
+#panel-wrapper .tag-list a {
+  margin: 0.25rem 0.35rem !important;
+}
+
+
+
+/* ============================================================
+   OPTIONAL — CLEANER LINK HOVER
+   ============================================================ */
+
+#panel-wrapper a:hover {
+  opacity: 0.8;
+  transition: opacity 0.15s ease-in-out;
+}
   background-attachment: fixed;
   background-position: center;
 }
