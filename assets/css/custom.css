@@ -9,7 +9,7 @@ body {
   background-attachment: fixed;
   background-position: center;
   position: relative;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 /* Soft vignette */
@@ -163,6 +163,8 @@ aside#panel-wrapper a:hover {
   opacity: 1 !important;
 }
 
+
+
 /* ============================================================
    FOOTER — OVERRIDE BOOTSTRAP'S text-muted
    ============================================================ */
@@ -180,15 +182,48 @@ footer.text-muted {
   border: 1px solid rgba(255, 255, 255, 0.22) !important;
   border-radius: 999px !important;
   backdrop-filter: blur(6px) !important;
-  padding: 1rem 0 !important;
+  padding: 1rem 1.5rem !important;
   text-align: center !important;
-}
-
-/* Force footer pill to stay on one line */
-footer.text-muted {
-  white-space: nowrap !important;   /* prevents wrapping */
-  width: auto !important;           /* shrink to fit content */
-  display: inline-flex !important;  /* keeps it on one line */
+  white-space: nowrap !important;
+  width: auto !important;
+  display: inline-flex !important;
   justify-content: center !important;
   align-items: center !important;
+}
+
+
+
+/* ============================================================
+   MOBILE FIXES — KEEP EVERYTHING INTACT
+   ============================================================ */
+
+@media (max-width: 768px) {
+
+  /* Prevent right sidebar from collapsing weirdly */
+  aside#panel-wrapper {
+    margin-top: 1.5rem !important;
+    padding: 1rem !important;
+  }
+
+  /* Ensure tag bubbles wrap cleanly */
+  #panel-wrapper .tag,
+  #panel-wrapper .post-tag,
+  #panel-wrapper .badge,
+  #panel-wrapper .badge-tag,
+  #panel-wrapper .tag-link,
+  #panel-wrapper .list-inline-item a {
+    font-size: 0.8rem !important;
+    padding: 0.3rem 0.65rem !important;
+  }
+
+  /* Prevent left sidebar from shrinking too small */
+  #sidebar-wrapper {
+    padding: 1rem !important;
+    margin-bottom: 1.5rem !important;
+  }
+
+  /* Ensure wallpaper behaves on mobile */
+  body {
+    background-attachment: scroll !important;
+  }
 }
