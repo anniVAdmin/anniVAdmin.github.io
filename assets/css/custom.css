@@ -1,5 +1,5 @@
 /* ============================================================
-   GLOBAL WALLPAPER
+   GLOBAL WALLPAPER + VIGNETTE
    ============================================================ */
 
 body {
@@ -12,7 +12,7 @@ body {
   overflow: hidden;
 }
 
-/* Soft vignette around edges */
+/* Soft vignette */
 body::before {
   content: "";
   position: fixed;
@@ -23,25 +23,10 @@ body::before {
     rgba(0,0,0,0) 45%,
     rgba(0,0,0,0.35) 100%
   );
-
-  /* ============================================================
-   TAG VISIBILITY FIX — MATCH SIDEBAR AESTHETIC
-   ============================================================ */
-
-aside#panel-wrapper .tag-list a {
-  color: #222 !important;              /* readable, matches left sidebar */
-  font-weight: 500 !important;         /* slightly stronger text */
-  text-shadow: none !important;        /* keep it crisp */
-}
-
-aside#panel-wrapper .tag-list a:hover {
-  color: #000 !important;              /* subtle darken on hover */
-  opacity: 0.85 !important;
-}
   z-index: 1;
 }
 
-/* Bottom fade for readability */
+/* Bottom fade */
 body::after {
   content: "";
   position: fixed;
@@ -55,29 +40,24 @@ body::after {
   z-index: 2;
 }
 
-/* Ensure all content sits above overlays */
+/* Ensure content sits above overlays */
 body > * {
   position: relative;
   z-index: 3;
 }
 
 
-
 /* ============================================================
-   LEFT SIDEBAR — MATCHED STYLE
+   LEFT SIDEBAR — FROSTED + CLEAN
    ============================================================ */
-
-:root {
-  --sidebar-bg: rgba(245, 245, 245, 0.88) !important;
-}
 
 #sidebar-wrapper {
   background: rgba(255, 255, 255, 0.15) !important;
   border: 1px solid rgba(255, 255, 255, 0.25) !important;
   border-radius: 8px !important;
   backdrop-filter: blur(6px);
-  box-shadow: none !important;
   padding: 1rem !important;
+  box-shadow: none !important;
 }
 
 #sidebar-wrapper a,
@@ -93,43 +73,37 @@ body > * {
 }
 
 
-
 /* ============================================================
-   RIGHT SIDEBAR — NUCLEAR OPTION
+   RIGHT SIDEBAR — MERGED RESET + OUTER FROSTING
    ============================================================ */
 
-/* Kill ALL backgrounds, shadows, borders, padding on every layer */
-aside#panel-wrapper,
-aside#panel-wrapper .access,
-aside#panel-wrapper .access .row,
-aside#panel-wrapper .access .row > div,
-aside#panel-wrapper .access .row > div > * {
+/* Reset everything inside the right sidebar */
+aside#panel-wrapper * {
   background: transparent !important;
   border: none !important;
   box-shadow: none !important;
-  backdrop-filter: none !important;
   padding: 0 !important;
   margin: 0 !important;
+  backdrop-filter: none !important;
 }
 
-/* Now apply the frosted-glass container to the ACTUAL visible block */
-aside#panel-wrapper .access .row > div {
+/* Frosted outer container ONLY */
+aside#panel-wrapper {
   background: rgba(255, 255, 255, 0.15) !important;
   border: 1px solid rgba(255, 255, 255, 0.25) !important;
   border-radius: 8px !important;
   padding: 1rem !important;
   backdrop-filter: blur(6px) !important;
-  margin-bottom: 1rem !important;
+  color: inherit !important;
 }
 
-/* Frosted cards inside the sidebar */
+/* Inner cards become transparent (Option 4) */
 aside#panel-wrapper .post-preview,
-aside#panel-wrapper .tag-list {
-  background: rgba(255, 255, 255, 0.15) !important;
-  border: 1px solid rgba(255, 255, 255, 0.25) !important;
-  border-radius: 8px !important;
-  padding: 0.75rem 1rem !important;
-  backdrop-filter: blur(6px) !important;
+aside#panel-wrapper .tag-list,
+aside#panel-wrapper .access .row > div {
+  background: transparent !important;
+  border: none !important;
+  padding: 0.75rem 0 !important;
   margin-bottom: 1rem !important;
 }
 
@@ -143,193 +117,34 @@ aside#panel-wrapper .panel-heading {
   color: #222 !important;
 }
 
-/* Tag spacing */
-aside#panel-wrapper .tag-list a {
-  margin: 0.25rem 0.35rem !important;
-}
-
 /* Hover behaviour */
 aside#panel-wrapper a:hover {
   opacity: 0.8 !important;
   transition: opacity 0.15s ease-in-out !important;
 }
-/* ============================================================
-   MATCHED SIDEBAR CARD STYLE (LEFT + RIGHT)
-   ============================================================ */
 
-.sidebar,
-aside .access .post-preview,
-aside .access .tag-list {
-  background: rgba(255, 255, 255, 0.15) !important;
-  border: 1px solid rgba(255, 255, 255, 0.25) !important;
-  border-radius: 8px !important;
-  padding: 0.75rem 1rem !important;
-  backdrop-filter: blur(6px);
-  box-shadow: none !important;
-  margin-bottom: 1rem !important;
-}
-
-/* Tag spacing */
-aside .access .tag-list a {
-  margin: 0.25rem 0.35rem !important;
-}
 
 /* ============================================================
-   RIGHT SIDEBAR — THERMONUCLEAR OPTION
-   ============================================================ */
-
-/* Strip ALL inline styles from the right sidebar */
-aside#panel-wrapper *[style] {
-  background: transparent !important;
-  border: none !important;
-  box-shadow: none !important;
-  padding: 0 !important;
-  margin: 0 !important;
-  backdrop-filter: none !important;
-}
-
-/* Frosted container applied by attribute selector */
-aside#panel-wrapper .access .row > div:not([id="search-result-wrapper"]) {
-  background: rgba(255, 255, 255, 0.15) !important;
-  border: 1px solid rgba(255, 255, 255, 0.25) !important;
-  border-radius: 8px !important;
-  padding: 1rem !important;
-  backdrop-filter: blur(6px) !important;
-  margin-bottom: 1rem !important;
-}
-
-/* Frosted cards inside */
-aside#panel-wrapper .post-preview,
-aside#panel-wrapper .tag-list {
-  background: rgba(255, 255, 255, 0.15) !important;
-  border: 1px solid rgba(255, 255, 255, 0.25) !important;
-  border-radius: 8px !important;
-  padding: 0.75rem 1rem !important;
-  backdrop-filter: blur(6px) !important;
-  margin-bottom: 1rem !important;
-}
-
-/* Headings */
-aside#panel-wrapper .panel-heading {
-  font-size: 1.05rem !important;
-  font-weight: 600 !important;
-  letter-spacing: 0.3px !important;
-  text-transform: uppercase !important;
-  margin-bottom: 0.75rem !important;
-  color: #222 !important;
-}
-
-/* Tag spacing */
-aside#panel-wrapper .tag-list a {
-  margin: 0.25rem 0.35rem !important;
-}
-
-/* Hover */
-aside#panel-wrapper a:hover {
-  opacity: 0.8 !important;
-  transition: opacity 0.15s ease-in-out !important;
-}
-
-/* ============================================================
-   RIGHT SIDEBAR — OVERRIDE BOOTSTRAP GRID SHIELD
-   ============================================================ */
-
-aside#panel-wrapper {
-  background: rgba(255, 255, 255, 0.15) !important;
-  border: 1px solid rgba(255, 255, 255, 0.25) !important;
-  border-radius: 8px !important;
-  padding: 1rem !important;
-  backdrop-filter: blur(6px) !important;
-  box-shadow: none !important;
-  margin-left: 0 !important;
-  margin-right: 0 !important;
-  color: inherit !important; /* override text-muted */
-}
-
-/* ============================================================
-   TAG BUBBLE — GLASSY TRANSPARENCY
-   ============================================================ */
-
-aside#panel-wrapper .tag-list a {
-  background: rgba(255, 255, 255, 0.12) !important;  /* lighter, glassy */
-  border: 1px solid rgba(255, 255, 255, 0.25) !important;
-  color: #222 !important;                            /* readable text */
-  font-weight: 500 !important;
-  backdrop-filter: blur(4px) !important;             /* subtle blur inside bubble */
-  padding: 0.25rem 0.55rem !important;               /* keep the pill shape */
-  border-radius: 999px !important;                   /* perfect pill */
-}
-
-/* Hover effect */
-aside#panel-wrapper .tag-list a:hover {
-  background: rgba(255, 255, 255, 0.18) !important;  /* slight brighten */
-  color: #000 !important;
-  opacity: 1 !important;
-}
-
-/* ============================================================
-   OPTIONAL — CLEANER LINK HOVER
-   ============================================================ */
-
-aside .access a:hover,
-.sidebar a:hover {
-  opacity: 0.8;
-  transition: opacity 0.15s ease-in-out;
-}
-
-/* ============================================================
-   TAG BUBBLE — FINAL VISIBILITY FIX
+   TAG BUBBLES — OPTION A (AIRY, GLASSY, MINIMAL)
    ============================================================ */
 
 aside#panel-wrapper .tag-list a,
 aside#panel-wrapper .tag-list a.badge,
 aside#panel-wrapper .tag-list a.tag {
-  background: rgba(255, 255, 255, 0.10) !important;  /* more transparent */
-  border: 1px solid rgba(255, 255, 255, 0.25) !important;
-  color: #111 !important;                            /* stronger contrast */
-  font-weight: 600 !important;                       /* crisp text */
-  backdrop-filter: blur(4px) !important;
-  padding: 0.25rem 0.55rem !important;
-  border-radius: 999px !important;
-  text-shadow: none !important;
-}
-
-/* Hover */
-aside#panel-wrapper .tag-list a:hover {
-  background: rgba(255, 255, 255, 0.18) !important;
-  color: #000 !important;
-  opacity: 1 !important;
-}
-
-/* ============================================================
-   TAG TEXT — OVERRIDE BOOTSTRAP'S text-muted
-   ============================================================ */
-
-aside#panel-wrapper .tag-list a,
-aside#panel-wrapper .tag-list a * {
-  color: #111 !important;               /* strong readable text */
-  font-weight: 600 !important;          /* crisp */
-  text-shadow: none !important;
-}
-
-/* ============================================================
-   TAG BUBBLES — HIGH OPACITY FOR MAX READABILITY
-   ============================================================ */
-
-aside#panel-wrapper .tag-list a {
-  background: rgba(255, 255, 255, 0.35) !important;  /* stronger opacity */
-  border: 1px solid rgba(255, 255, 255, 0.45) !important;
-  color: #111 !important;
+  background: rgba(255, 255, 255, 0.12) !important; /* airy */
+  border: 1px solid rgba(255, 255, 255, 0.22) !important;
+  color: #111 !important; /* readable */
   font-weight: 600 !important;
   backdrop-filter: blur(4px) !important;
   padding: 0.25rem 0.55rem !important;
   border-radius: 999px !important;
   text-shadow: none !important;
+  margin: 0.25rem 0.35rem !important;
 }
 
 /* Hover */
 aside#panel-wrapper .tag-list a:hover {
-  background: rgba(255, 255, 255, 0.45) !important;
+  background: rgba(255, 255, 255, 0.18) !important;
   color: #000 !important;
   opacity: 1 !important;
 }
