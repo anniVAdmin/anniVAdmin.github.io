@@ -247,6 +247,27 @@ aside#panel-wrapper {
 }
 
 /* ============================================================
+   TAG BUBBLE — GLASSY TRANSPARENCY
+   ============================================================ */
+
+aside#panel-wrapper .tag-list a {
+  background: rgba(255, 255, 255, 0.12) !important;  /* lighter, glassy */
+  border: 1px solid rgba(255, 255, 255, 0.25) !important;
+  color: #222 !important;                            /* readable text */
+  font-weight: 500 !important;
+  backdrop-filter: blur(4px) !important;             /* subtle blur inside bubble */
+  padding: 0.25rem 0.55rem !important;               /* keep the pill shape */
+  border-radius: 999px !important;                   /* perfect pill */
+}
+
+/* Hover effect */
+aside#panel-wrapper .tag-list a:hover {
+  background: rgba(255, 255, 255, 0.18) !important;  /* slight brighten */
+  color: #000 !important;
+  opacity: 1 !important;
+}
+
+/* ============================================================
    OPTIONAL — CLEANER LINK HOVER
    ============================================================ */
 
