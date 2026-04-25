@@ -6,8 +6,6 @@ order: 4
 
 <div class="about-wrapper">
 
-### About
-
 Hi, I’m Anni — an admin support specialist who brings order, clarity, and calm to the parts of your business that get messy when you’re busy. I take the overdue, the half‑finished, and the “I’ll sort it later” tasks off your plate so you can focus on the work that actually matters.
 
 ### What I do
