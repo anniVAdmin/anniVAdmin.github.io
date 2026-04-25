@@ -7,7 +7,6 @@ baseurl: ""
 
 theme: jekyll-theme-chirpy
 lang: en
-timezone: Europe/London
 
 # Sidebar avatar (optional — remove if not used)
 avatar: "/assets/img/avatar.png"
