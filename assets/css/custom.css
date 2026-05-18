@@ -41,6 +41,14 @@ body {
   min-height: 100% !important;
 }
 
+@media (max-width: 768px) {
+  body {
+    background-attachment: scroll !important;
+    background-size: cover !important;
+    background-position: center top !important;
+  }
+}
+
 /* ============================================================
    GLOBAL OVERLAYS (BELOW TOPBAR + SIDEBAR)
    ============================================================ */
