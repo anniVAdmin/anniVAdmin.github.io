@@ -576,3 +576,15 @@ header#topbar-wrapper .container {
 #contact-email a:hover {
   color: rgba(0, 0, 0, 1) !important;       /* darker grey on hover */
 }
+
+@media (max-width: 768px) {
+  #breadcrumb,
+  nav[aria-label="Breadcrumb"],
+  .breadcrumb {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    height: auto !important;
+    margin-top: 0.5rem !important;
+  }
+}
