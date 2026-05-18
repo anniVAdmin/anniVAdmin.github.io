@@ -1,0 +1,26 @@
+<footer id="site-footer" aria-label="Site Footer">
+
+  <div class="footer-inner">
+
+    <div class="footer-left">
+      © <time>{{ 'now' | date: '%Y' }}</time>
+      {% if site.social.links %}
+        <a href="{{ site.social.links[0] }}">{{ site.social.name }}</a>
+      {% else %}
+        {{ site.social.name }}
+      {% endif %}
+    </div>
+
+    <div class="footer-center">
+      <img src="/assets/img/sign.png" alt="anniV signature" class="footer-sign">
+    </div>
+
+    <div class="footer-right">
+      Built with <a href="https://jekyllrb.com" target="_blank" rel="noopener">Jekyll</a>
+      •
+      Theme: <a href="https://github.com/cotes2020/jekyll-theme-chirpy" target="_blank" rel="noopener">Chirpy</a>
+    </div>
+
+  </div>
+
+</footer>
