@@ -44,7 +44,7 @@ Just send a message in your own words — no need to overthink it.
 
 <p>This button will take you directly to Messenger — quick, simple and absolutely no pressure.</p>
 
-<a href="https://m.me/anniVAdminSupport" style="text-decoration: none; color: inherit !important;">
+<a href="https://m.me/anniVAdmin" style="text-decoration: none; color: inherit !important;">
   <span style="
     display: inline-flex;
     align-items: center;
