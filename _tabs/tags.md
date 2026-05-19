@@ -29,7 +29,7 @@ Just a straightforward way to start the conversation and see what you need.
 <!-- EMAIL PILL -->
 <div class="pill" id="contact-email" markdown="1">
 
-### Email  
+<h3> Email </h3> 
 <a href="mailto:anniv.admin@gmail.com"><strong>anniv.admin@gmail.com</strong></a>
 
 The simplest way to reach me.  
@@ -59,5 +59,31 @@ Just send a message in your own words — no need to overthink it.
     Messenger
   </span>
 </a>
+
+<!-- LINKEDIN PILL -->
+<div class="pill" id="contact-linkedin" markdown="0">
+
+<h3>LinkedIn</h3>
+
+<p>Come say hi — that’s where I post updates, services, and the occasional admin‑gremlin moment.</p>
+
+<a href="https://www.linkedin.com/in/anni-v-9b1a8a40b" style="text-decoration: none; color: inherit !important;">
+  <span style="
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    padding: 0.35rem 0.75rem;
+    background: rgba(0,0,0,0.06);
+    border-radius: 999px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: inherit;
+  ">
+    LinkedIn
+  </span>
+</a>
+
+</div>
+
 
 </div>
