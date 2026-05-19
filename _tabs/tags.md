@@ -59,6 +59,7 @@ Just send a message in your own words — no need to overthink it.
     Messenger
   </span>
 </a>
+</div>
 
 <!-- LINKEDIN PILL -->
 <div class="pill" id="contact-linkedin" markdown="0">
@@ -85,5 +86,3 @@ Just send a message in your own words — no need to overthink it.
 
 </div>
 
-
-</div>
